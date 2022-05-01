@@ -20,6 +20,7 @@
 project = 'Orgmode.nvim'
 copyright = '2022, nvim-orgmode'
 author = 'nvim-orgmode'
+master_doc = 'index'
 
 # The full version, including alpha/beta/rc tags
 release = '0.2.1'
