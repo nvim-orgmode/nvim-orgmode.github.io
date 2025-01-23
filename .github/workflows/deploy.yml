@@ -1,5 +1,5 @@
 name: Build and Deploy
-on: workflow-dispatch
+on: workflow_dispatch
   # push:
   #   branches:
   #     - main
