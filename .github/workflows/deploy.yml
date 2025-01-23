@@ -7,19 +7,31 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install pandoc
+        uses: pandoc/actions/setup@v1
+        with:
+          version: 3.5
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Build md files
+        run: npm run pandoc:build
 
       - name: Install dependencies
-        run: |
-          sudo apt-get install -y python3-sphinx python3-sphinx-rtd-theme
+        run: npm ci
 
-      - name: Build
-        run: |
-          cd docs && make html
+      - name: Build with VitePress
+        run: npm run docs:build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           branch: gh-pages
-          folder: docs/_build/html
+          folder: .vitepress/dist
