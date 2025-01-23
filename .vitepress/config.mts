@@ -25,6 +25,7 @@ export default async () => {
         { icon: 'github', link: 'https://github.com/nvim-orgmode/orgmode' }
       ]
     },
+    cleanUrls: true,
   })
 
 }
