@@ -25,10 +25,6 @@ export default async () => {
         { icon: 'github', link: 'https://github.com/nvim-orgmode/orgmode' }
       ]
     },
-    ignoreDeadLinks: true,
-    transformHtml(code, id, ctx) {
-      console.log('id', id)
-    },
   })
 
 }
