@@ -1,0 +1,31 @@
+{
+  "name": "nvim-orgmode.github.io",
+  "version": "1.0.0",
+  "description": "Documentation for nvim-orgmode",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nvim-orgmode/nvim-orgmode.github.io.git"
+  },
+  "keywords": [
+    "nvim-orgmode",
+    "orgmode",
+    "neovim",
+    "nvim"
+  ],
+  "author": "Kristijan Husak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nvim-orgmode/nvim-orgmode.github.io/issues"
+  },
+  "homepage": "https://github.com/nvim-orgmode/nvim-orgmode.github.io#readme",
+  "dependencies": {
+    "@types/node": "^22.10.9",
+    "vitepress": "^1.6.3"
+  }
+}
