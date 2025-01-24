@@ -1,1 +1,0 @@
-import{_ as i,c as a,ag as n,o as l}from"./chunks/framework.-a8jReyC.js";const g=JSON.parse('{"title":"Plugins","description":"","frontmatter":{},"headers":[],"relativePath":"plugins.md","filePath":"plugins.md"}'),h={name:"plugins.md"};function e(t,s,p,k,r,E){return l(),a("div",null,s[0]||(s[0]=[n("",36)]))}const o=i(h,[["render",e]]);export{g as __pageData,o as default};
