@@ -1,0 +1,27 @@
+* Nvim Orgmode Docs
+
+Online documentation for [[https://github.com/nvim-orgmode/orgmode][nvim-orgmode]] plugin,
+automatically built from the [[https://github.com/nvim-orgmode/orgmode/tree/master/docs][docs]] folder in the [[https://github.com/nvim-orgmode/orgmode][nvim-orgmode]] repository.
+
+**** DO NOT submit PRs to this repository. All changes to the documentation should be made in the [[https://github.com/nvim-orgmode/orgmode/tree/master/docs][nvim-orgmode docs]] folder.
+
+-----
+
+*** View this documentation locally
+
+**** Dependencies
+1. [[https://nodejs.org/][nodejs]] - Version 18 or later
+2. [[https://pandoc.org/][pandoc]] - Version 3.5 or later
+
+**** How to run
+1. Run =npm install= to install the dependencies.
+2. Run =npm run docs:dev= to start the development server.
+
+**** How it works
+Publishing documentation to the Github pages follows a multi-step process:
+1. Once =docs= are updated in the[[https://github.com/nvim-orgmode/orgmode][ nvim-orgmode]] repository,
+   [[https://github.com/nvim-orgmode/orgmode/blob/master/.github/workflows/web_docs.yml][workflow]] runs to push the =docs= folder to this repository
+2. Once the =docs= folder is up to date, another [[https://github.com/nvim-orgmode/nvim-orgmode.github.io/blob/main/.github/workflows/deploy.yml][workflow]] runs, which does these steps:
+   1. Converts =org= files to =markdown= files with =pandoc=
+   2. Builds the =vitepress= site from the =markdown= files
+   3. Pushes the =vitepress= site to the =gh-pages= branch
