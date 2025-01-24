@@ -27,7 +27,12 @@ export default async () => {
     themeConfig: {
       logo: './nvim-orgmode.svg',
       search: {
-        provider: 'local'
+        provider: 'algolia',
+        options: {
+          appId: 'EUVP2UF47W',
+          apiKey: '4be90be7c304081ec37a2b44bccefad5',
+          indexName: 'nvim-orgmodeio',
+        }
       },
       nav: [
         { text: 'Home', link: '/' },
