@@ -25,6 +25,7 @@ export default async () => {
       ['meta', { name: 'twitter:image', content: 'https://github.com/nvim-orgmode/orgmode/blob/master/assets/nvim-orgmode.svg' }],
     ],
     themeConfig: {
+      logo: './nvim-orgmode.svg',
       nav: [
         { text: 'Home', link: '/' },
       ],
