@@ -5,5 +5,18 @@ function Link(el)
     target = target:gsub('::', '')
   end
   el.target = target
+
+  local content = {}
+  for _, item in ipairs(el.content) do
+    if item.text then
+      table.insert(content, item.text)
+    end
+    if item.content then
+      for _, subitem in ipairs(item.content) do
+        table.insert(content, subitem.text)
+      end
+    end
+  end
+  el.content = table.concat(content, '_')
   return el
 end

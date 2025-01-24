@@ -6,7 +6,9 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
-    "pandoc:build": "node ./scripts/generate_md.mjs"
+    "pandoc:build": "node ./scripts/generate_md.mjs",
+    "predocs:dev": "npm run pandoc:build",
+    "predocs:build": "npm run pandoc:build"
   },
   "repository": {
     "type": "git",
