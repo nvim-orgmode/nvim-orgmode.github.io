@@ -26,6 +26,9 @@ export default async () => {
     ],
     themeConfig: {
       logo: './nvim-orgmode.svg',
+      search: {
+        provider: 'local'
+      },
       nav: [
         { text: 'Home', link: '/' },
       ],
