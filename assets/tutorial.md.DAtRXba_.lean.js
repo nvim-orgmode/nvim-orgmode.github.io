@@ -1,0 +1,1 @@
+import{_ as a,c as s,ae as i,o as t}from"./chunks/framework.BzDBnRMZ.js";const g=JSON.parse('{"title":"Overview","description":"","frontmatter":{},"headers":[],"relativePath":"tutorial.md","filePath":"tutorial.md"}'),n={name:"tutorial.md"};function o(l,e,r,h,p,d){return t(),s("div",null,e[0]||(e[0]=[i("",49)]))}const u=a(n,[["render",o]]);export{g as __pageData,u as default};
