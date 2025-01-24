@@ -14,8 +14,17 @@ export default async () => {
     title: "Nvim Orgmode",
     description: "Documentation for Nvim Orgmode",
     srcDir: './docs_md',
+    head: [
+      ['link', { rel: 'icon', href: '/favicon.ico' }],
+      ['meta', { name: 'og:title', content: 'Nvim Orgmode' }],
+      ['meta', { name: 'og:description', content: 'Documentation for Nvim Orgmode' }],
+      ['meta', { name: 'og:image', content: 'https://github.com/nvim-orgmode/orgmode/blob/master/assets/nvim-orgmode.svg' }],
+      ['meta', { name: 'og:url', content: 'https://nvim-orgmode.github.i' }],
+      ['meta', { name: 'twitter:title', content: 'Nvim Orgmode' }],
+      ['meta', { name: 'twitter:description', content: 'Documentation for Nvim Orgmode' }],
+      ['meta', { name: 'twitter:image', content: 'https://github.com/nvim-orgmode/orgmode/blob/master/assets/nvim-orgmode.svg' }],
+    ],
     themeConfig: {
-      // https://vitepress.dev/reference/default-theme-config
       nav: [
         { text: 'Home', link: '/' },
       ],
