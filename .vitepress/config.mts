@@ -26,6 +26,11 @@ export default async () => {
       ]
     },
     cleanUrls: true,
+    markdown: {
+      anchor: {
+        slugify: (s: string) => s.replace(' ', '-').toLowerCase()
+      }
+    }
   })
 
 }
