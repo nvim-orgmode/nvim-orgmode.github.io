@@ -1,1 +1,0 @@
-import{_ as i,c as a,ag as n,o as h}from"./chunks/framework.CB8iguzh.js";const g=JSON.parse('{"title":"Plugins","description":"","frontmatter":{},"headers":[],"relativePath":"plugins.md","filePath":"plugins.md"}'),l={name:"plugins.md"};function e(t,s,p,k,r,E){return h(),a("div",null,s[0]||(s[0]=[n("",40)]))}const o=i(l,[["render",e]]);export{g as __pageData,o as default};
