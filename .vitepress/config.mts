@@ -64,7 +64,11 @@ export default async () => {
       anchor: {
         slugify: (s: string) => s.replace(/\s/g, '-').replace(/[\.\/]/g, '').toLowerCase()
       },
-    }
+    },
+    sitemap: {
+      hostname: 'https://nvim-orgmode.github.io'
+    },
+    lastUpdated: true
   })
 
 }
