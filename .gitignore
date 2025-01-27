@@ -1,0 +1,4 @@
+node_modules
+cache
+.vitepress/dist
+docs_md/**/*.md
