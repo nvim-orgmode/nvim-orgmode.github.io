@@ -49,6 +49,11 @@ export default async () => {
         }
         if (sorting.includes(a.text)) return -1
         if (sorting.includes(b.text)) return 1
+
+        // Push changelog to the bottom
+        if (a.text === 'Changelog') return 1
+        if (b.text === 'Changelog') return -1
+
         return a.text.localeCompare(b.text)
       }),
 
